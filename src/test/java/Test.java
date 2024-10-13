@@ -19,7 +19,6 @@ public class Test {
         } else {
             return "wrong number";
         }
-
     }
 
     @org.testng.annotations.Test
@@ -27,7 +26,6 @@ public class Test {
 
         String result = checkNumber(3);
         Assert.assertEquals(result, "T");
-
     }
 
     @org.testng.annotations.Test
@@ -35,7 +33,6 @@ public class Test {
 
         String result = checkNumber(5);
         Assert.assertEquals(result, "M");
-
     }
 
     @org.testng.annotations.Test
@@ -43,7 +40,6 @@ public class Test {
 
         String result = checkNumber(15);
         Assert.assertEquals(result, "TMS");
-
     }
 
     @org.testng.annotations.Test
@@ -51,7 +47,6 @@ public class Test {
 
         String result = checkNumber(0);
         Assert.assertEquals(result, "TMS");
-
     }
 
     @org.testng.annotations.Test
@@ -59,6 +54,5 @@ public class Test {
 
         String result = checkNumber(7);
         Assert.assertEquals(result, "wrong number");
-
     }
 }
