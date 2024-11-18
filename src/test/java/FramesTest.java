@@ -35,6 +35,7 @@ public class FramesTest {
         WebElement frame = driver.findElement(By.xpath("//p[text()='Your content goes here.']"));
         String frameText = frame.getText();
         Assert.assertEquals(frameText, "Your content goes here.");
+        driver.switchTo().defaultContent();
     }
 
     //Закрыть браузер
